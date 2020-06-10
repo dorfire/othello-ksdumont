@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  color: black;
+}
+.header {
+  margin: 10px;
+  font-size: 4rem;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Othello from "./Components/Othello/Othello";
 import Completed from "./Components/Completed/Completed";
+import Board from "./Components/Board/Board";
+import Score from "./Components/Score/Score";
+import OthelloContext from "./OthelloContext";
 import "./App.css";
 
 class App extends Component {
@@ -13,15 +15,22 @@ class App extends Component {
       whiteScore: 0,
     };
   }
+
   render() {
-    let othello = this.state.gameStatus === "active" ? <Othello /> : "";
     let completed = this.state.status === "completed" ? <Completed /> : "";
+    let board = this.state.gameStatus === "active" ? <Board /> : "";
     return (
-      <div className="App container">
-        <h1 className="text-center">Othello</h1>
-        {othello}
-        {completed}
-      </div>
+      <OthelloContext.Provider value={this.state}>
+        <div className="App container">
+          <h1 className="text-center header">Othello</h1>
+          <Score
+            blackScore={this.state.blackScore}
+            whiteScore={this.state.whiteScore}
+          />
+          {board}
+          {completed}
+        </div>
+      </OthelloContext.Provider>
     );
   }
 }

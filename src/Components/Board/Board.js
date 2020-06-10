@@ -9,7 +9,49 @@ class Board extends Component {
   render() {
     return (
       <table className="board table table-bordered">
-        <tbody></tbody>
+        <tbody>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+      
+        </tbody>
       </table>
     );
   }
